@@ -23,9 +23,11 @@ class ApiController extends Controller
     public function store(Request $request)
     {
 
-    	//If data came from from form then need a validation
-    	//$request
-
+    	//If data came from form then need a validation
+    	// $validatedData = $request->validate([
+	    //     'title' => 'required|unique:posts|max:255',
+	    //     'description' => 'required',
+	    // ]);
 
     	$contents = Content::create($request->all());
 

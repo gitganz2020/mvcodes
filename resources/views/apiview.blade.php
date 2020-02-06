@@ -24,6 +24,10 @@
                 <li>{{ $response }}</li>
             </ul>
 
+            <form action="" method="POST">
+                @csrf_token //so protection middleware can validate request
+            </form>
+
         </div>
     </body>
 </html>
